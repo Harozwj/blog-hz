@@ -20,7 +20,7 @@ whatsapp: "5516997035353"
 lead_webhook: "https://harowzj.app.n8n.cloud/webhook/hrz-lead"
 
 # Pixel do Meta (o mesmo do site de vendas). Cole o ID para medir o blog.
-meta_pixel_id: ""
+meta_pixel_id: "667097932337226"
 
 markdown: kramdown
 plugins:
