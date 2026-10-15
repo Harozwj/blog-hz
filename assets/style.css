@@ -46,7 +46,7 @@ nav .nav-cta { color: var(--laranja-escuro); }
 .hero p { font-size: 19px; color: var(--texto); margin: 0 0 28px; max-width: 34em; }
 .hero-botoes { display: flex; gap: 12px; flex-wrap: wrap; }
 .hero-foto { margin: 0; position: relative; }
-.hero-foto img { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 18px; background: var(--areia); }
+.hero-foto img { width: 100%; aspect-ratio: 4/5; object-fit: cover; object-position: center 20%; border-radius: 18px; background: var(--areia); }
 .hero-foto figcaption { position: absolute; left: 16px; right: 16px; bottom: 16px; background: rgba(31,41,48,.88); color: #fff; padding: 14px 16px; border-radius: 12px; font-size: 13px; line-height: 1.45; }
 .hero-foto figcaption strong { display: block; font-size: 15px; }
 .hero-foto figcaption span { color: #C9D1D7; }
@@ -60,7 +60,7 @@ nav .nav-cta { color: var(--laranja-escuro); }
 .grade { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
 .cartao { background: #fff; border: 1px solid var(--linha); border-radius: 16px; overflow: hidden; text-decoration: none; color: inherit; transition: transform .2s, box-shadow .2s; display: flex; flex-direction: column; }
 .cartao:hover { transform: translateY(-3px); box-shadow: 0 14px 36px rgba(31,41,48,.10); }
-.cartao-img { aspect-ratio: 16/9; background-color: var(--areia); background-size: cover; background-position: center; }
+.cartao-img { aspect-ratio: 16/9; background-color: var(--areia); background-size: cover; background-position: center 22%; }
 .cartao-corpo { padding: 22px; display: flex; flex-direction: column; flex: 1; }
 .cartao h3 { font-family: var(--serif); font-size: 22px; line-height: 1.25; color: var(--tinta); margin: 0 0 10px; }
 .cartao p { font-size: 15px; margin: 0 0 16px; color: var(--texto); flex: 1; }
@@ -98,7 +98,7 @@ nav .nav-cta { color: var(--laranja-escuro); }
 .autor strong { display: block; color: var(--tinta); font-size: 15px; }
 .autor span { font-size: 13px; color: var(--suave); }
 .artigo-capa { max-width: 1000px; margin: 32px auto; padding: 0 20px; }
-.artigo-capa img { border-radius: 16px; width: 100%; }
+.artigo-capa img { border-radius: 16px; width: 100%; aspect-ratio: 16/9; object-fit: cover; object-position: center 22%; }
 .artigo-corpo { margin-top: 32px; }
 .artigo-corpo h2 { font-family: var(--serif); font-size: 28px; color: var(--tinta); margin: 44px 0 12px; line-height: 1.25; }
 .artigo-corpo h3 { font-size: 20px; color: var(--tinta); margin: 32px 0 8px; }

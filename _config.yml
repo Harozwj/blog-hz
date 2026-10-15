@@ -9,7 +9,7 @@ permalink: /:title/
 autor:
   nome: "Haroldo Zwetsch Jr."
   cargo: "Treinador há mais de 30 anos · Criador do Método H360 · CEO do CFTRP"
-  foto: "https://lh3.googleusercontent.com/d/1fIOI4xn8dO-XBZwsx_RZkj89vwGv5StD=w800"
+  foto: "https://lh3.googleusercontent.com/d/1pRGAZKzotr_LCwLyHY97u6RtlNC8HFX9=w900"
 
 site_vendas: "https://hrzmentoria.com.br"
 instagram: "https://www.instagram.com/haroldozwetsch/"
@@ -33,3 +33,11 @@ defaults:
     values: { layout: "post" }
 
 exclude: [README.md]
+
+# Banco de fotos reais do Haroldo (pasta do Drive "Fotos do Haroldo")
+fotos:
+  - id: 1pRGAZKzotr_LCwLyHY97u6RtlNC8HFX9   # bracos cruzados, autoridade
+  - id: 1ybWWLEafmgZITKlbTvlZxeK747Yyz9k7   # bolas na mao, quadra de saibro
+  - id: 13bK_z-h41zOUqUzwpIhwHv4HE1Dn3xVF   # bola no ar, treino
+  - id: 1c-4XtGD-oYKK7W7Mf64F6XmH5gHzhmt4   # raquete no ombro, perfil
+  - id: 1TFQnfMEYkz1qAFKdx39Ocfi0fwCl1cL-   # agasalho branco, raquete

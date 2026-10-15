@@ -2,7 +2,7 @@
 title: "O jogador que sabe bater, mas não sabe jogar"
 description: "Por que tanto aluno com golpe bonito trava no jogo, e como o treino resolve isso com leitura, decisão e execução."
 categoria: "Treinamento"
-imagem: "https://lh3.googleusercontent.com/d/1fIOI4xn8dO-XBZwsx_RZkj89vwGv5StD=w1600"
+imagem: "https://lh3.googleusercontent.com/d/1ybWWLEafmgZITKlbTvlZxeK747Yyz9k7=w1600"
 produto_nome: "Como Estruturar Sessões de Treino de Tênis"
 produto_frase: "O passo a passo para montar cada sessão com objetivo, critério de sucesso e progressão."
 produto_link: "https://hrzmentoria.com.br/como-estruturar-sessoes-de-treino-de-tenis"
