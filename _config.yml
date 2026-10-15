@@ -1,7 +1,7 @@
 title: "Blog do Haroldo"
 description: "Leitura de treinador sobre tênis, treinamento e o mercado do esporte. Por Haroldo Zwetsch Jr., criador do Método H360."
-url: "https://blog.hrzmentoria.com.br"
-baseurl: ""
+url: "https://harozwj.github.io"
+baseurl: "/blog-hz"
 lang: pt-BR
 timezone: America/Sao_Paulo
 permalink: /:title/
