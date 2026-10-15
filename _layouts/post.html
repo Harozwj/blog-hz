@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<article class="artigo">
+  <header class="artigo-topo wrap-estreito">
+    {% if page.categoria %}<div class="rotulo">{{ page.categoria }}</div>{% endif %}
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}<p class="linha-fina">{{ page.description }}</p>{% endif %}
+    <div class="autor">
+      <img src="{{ site.autor.foto }}" alt="{{ site.autor.nome }}" width="44" height="44">
+      <div><strong>{{ site.autor.nome }}</strong><span>{{ page.date | date: "%d/%m/%Y" }} · {{ content | number_of_words | divided_by: 200 | plus: 1 }} min de leitura</span></div>
+    </div>
+  </header>
+
+  {% if page.imagem %}<figure class="artigo-capa"><img src="{{ page.imagem }}" alt="{{ page.title }}"></figure>{% endif %}
+
+  <div class="artigo-corpo wrap-estreito">
+    {{ content }}
+
+    {% if page.produto_nome %}
+    <aside class="produto">
+      <div class="rotulo rotulo-claro">Para ir além</div>
+      <h3>{{ page.produto_nome }}</h3>
+      {% if page.produto_frase %}<p>{{ page.produto_frase }}</p>{% endif %}
+      <a class="botao" href="{{ page.produto_link }}?utm_source=blog&utm_medium=artigo&utm_campaign={{ page.slug }}">Conhecer agora</a>
+    </aside>
+    {% endif %}
+  </div>
+</article>
+
+{% include captura.html origem="artigo" %}

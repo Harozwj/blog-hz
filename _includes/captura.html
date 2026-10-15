@@ -1,0 +1,23 @@
+<section class="captura" id="carta">
+  <div class="wrap captura-in">
+    <div class="captura-texto">
+      <div class="rotulo rotulo-claro">Toda terça, no seu e-mail</div>
+      <h2>Carta de Quadra</h2>
+      <p>A leitura de treinador sobre o que acontece no circuito, um vira-chave para quem assiste e um conceito para levar ao próximo jogo. Grátis.</p>
+    </div>
+    <form class="captura-form" data-origem="{{ include.origem | default: 'blog' }}" novalidate>
+      <input type="text" name="nome" placeholder="Seu primeiro nome" autocomplete="given-name">
+      <input type="email" name="email" placeholder="Seu melhor e-mail" autocomplete="email" required>
+      <select name="perfil" required>
+        <option value="">Quem é você no tênis?</option>
+        <option value="treinador">Treinador ou professor</option>
+        <option value="pais">Pai ou mãe de atleta</option>
+        <option value="jogador">Jogador</option>
+        <option value="academia">Academia ou clube</option>
+      </select>
+      <label class="consentimento"><input type="checkbox" name="consentimento" value="sim" required> Aceito receber e-mails da HRZ. Posso sair quando quiser.</label>
+      <button type="submit" class="botao">Quero receber</button>
+      <p class="captura-msg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>

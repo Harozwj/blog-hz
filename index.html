@@ -1,0 +1,59 @@
+---
+layout: default
+title: Blog do Haroldo
+---
+<section class="hero">
+  <div class="wrap hero-in">
+    <div class="hero-texto">
+      <div class="rotulo">Tênis · Treinamento · Mercado</div>
+      <h1>O tênis lido por quem forma jogadores há mais de 30 anos.</h1>
+      <p>Toda semana, um artigo sobre o que está mudando no jogo, no treinamento e no mercado do esporte, com a leitura do Método H360.</p>
+      <div class="hero-botoes">
+        <a class="botao" href="#carta">Receber a Carta de Quadra</a>
+        <a class="botao botao-linha" href="#artigos">Ler os artigos</a>
+      </div>
+    </div>
+    <figure class="hero-foto">
+      <img src="{{ site.autor.foto }}" alt="{{ site.autor.nome }}">
+      <figcaption><strong>{{ site.autor.nome }}</strong><span>{{ site.autor.cargo }}</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="artigos" id="artigos">
+  <div class="wrap">
+    <div class="secao-topo">
+      <h2>Artigos recentes</h2>
+      <p>Leitura, decisão e execução, dentro e fora da quadra.</p>
+    </div>
+    {% if site.posts.size > 0 %}
+    <div class="grade">
+      {% for post in site.posts limit: 12 %}
+      <a class="cartao" href="{{ post.url | relative_url }}">
+        {% if post.imagem %}<div class="cartao-img" style="background-image:url('{{ post.imagem }}')"></div>{% endif %}
+        <div class="cartao-corpo">
+          {% if post.categoria %}<div class="rotulo">{{ post.categoria }}</div>{% endif %}
+          <h3>{{ post.title }}</h3>
+          <p>{{ post.description | default: post.excerpt | strip_html | truncate: 140 }}</p>
+          <span class="cartao-data">{{ post.date | date: "%d/%m/%Y" }}</span>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p class="vazio">O primeiro artigo sai nesta semana.</p>
+    {% endif %}
+  </div>
+</section>
+
+<section class="ponte">
+  <div class="wrap ponte-in">
+    <div>
+      <h2>Quer ir além do artigo?</h2>
+      <p>Cursos, livros e mentorias para treinadores, famílias, jogadores e academias.</p>
+    </div>
+    <a class="botao" href="{{ site.site_vendas }}?utm_source=blog&utm_medium=home">Ver cursos e mentorias</a>
+  </div>
+</section>
+
+{% include captura.html origem="home" %}

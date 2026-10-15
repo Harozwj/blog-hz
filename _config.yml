@@ -1,0 +1,35 @@
+title: "Blog do Haroldo"
+description: "Leitura de treinador sobre tênis, treinamento e o mercado do esporte. Por Haroldo Zwetsch Jr., criador do Método H360."
+url: "https://blog.hrzmentoria.com.br"
+baseurl: ""
+lang: pt-BR
+timezone: America/Sao_Paulo
+permalink: /:title/
+
+autor:
+  nome: "Haroldo Zwetsch Jr."
+  cargo: "Treinador há mais de 30 anos · Criador do Método H360 · CEO do CFTRP"
+  foto: "https://lh3.googleusercontent.com/d/1fIOI4xn8dO-XBZwsx_RZkj89vwGv5StD=w800"
+
+site_vendas: "https://hrzmentoria.com.br"
+instagram: "https://www.instagram.com/haroldozwetsch/"
+youtube: "https://www.youtube.com/@hrzmentoria"
+whatsapp: "5516997035353"
+
+# Captura de leads: URL de produção do workflow "HRZ · Captura de leads" no n8n
+lead_webhook: "https://harowzj.app.n8n.cloud/webhook/hrz-lead"
+
+# Pixel do Meta (o mesmo do site de vendas). Cole o ID para medir o blog.
+meta_pixel_id: ""
+
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+defaults:
+  - scope: { path: "", type: "posts" }
+    values: { layout: "post" }
+
+exclude: [README.md]

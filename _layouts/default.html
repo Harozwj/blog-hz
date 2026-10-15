@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+  {% feed_meta %}
+  {% if site.meta_pixel_id != "" %}
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '{{ site.meta_pixel_id }}'); fbq('track', 'PageView');
+  </script>
+  {% endif %}
+</head>
+<body>
+  <header class="topo">
+    <div class="wrap topo-in">
+      <a class="marca" href="{{ '/' | relative_url }}"><span class="marca-hrz">HRZ</span><span class="marca-blog">Blog do Haroldo</span></a>
+      <nav>
+        <a href="{{ '/' | relative_url }}#artigos">Artigos</a>
+        <a href="{{ site.site_vendas }}?utm_source=blog&utm_medium=menu">Cursos e mentorias</a>
+        <a class="nav-cta" href="#carta">Carta de Quadra</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>{{ content }}</main>
+
+  <footer class="rodape">
+    <div class="wrap rodape-in">
+      <div>
+        <div class="marca-hrz">HRZ</div>
+        <p>Paixão. Método. Resultado.</p>
+      </div>
+      <div class="rodape-links">
+        <a href="{{ site.site_vendas }}?utm_source=blog&utm_medium=rodape">hrzmentoria.com.br</a>
+        <a href="{{ site.instagram }}">Instagram</a>
+        <a href="{{ site.youtube }}">YouTube</a>
+        <a href="https://wa.me/{{ site.whatsapp }}">WhatsApp</a>
+      </div>
+      <p class="legal">Hrz Tecnologia em Esportes Ltda. · CNPJ 25.788.750/0001-73</p>
+    </div>
+  </footer>
+  <script>window.HRZ_LEAD_URL = "{{ site.lead_webhook }}";</script>
+  <script src="{{ '/assets/captura.js' | relative_url }}" defer></script>
+</body>
+</html>
